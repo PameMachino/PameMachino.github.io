@@ -2,17 +2,244 @@
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Asistente digital</title>
-	</head>
-	<body>
-		<h1>Asistente digital de navegación segura para ciclistas urbanos en Concepción: Clasificación
-inteligente de tramos y zonas de riesgo en tiempo real</h1>
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Asistente Digital para Ciclistas - Concepción</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Bikleta <span>IA</span></div>
+        <ul>
+          <li><a href="#problema">Problema</a></li>
+          <li><a href="#propuesta">Propuesta</a></li>
+          <li><a href="#comparativa">Comparativa</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Asistente Digital para Ciclistas</h1>
+        <p class="subtitle">Seguridad y navegación inteligente en el Gran Concepción</p>
+        <div class="badge">Proyecto UBB - Ingeniería de Ejecución en Computación</div>
+      </section>
+
+      <section id="problema" class="container">
+        <h2>1.1 Presentación del Área y Problemática</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>El Contexto</h3>
+            <p>Ciudadanos de <strong>Concepción, Región del Bío-Bío</strong>, que utilizan la bicicleta como transporte urbano.</p>
+          </div>
+          <div class="card warning">
+            <h3>El Problema</h3>
+            <p>Las apps actuales (Google Maps) priorizan la distancia corta, pero ignoran la <strong>seguridad ciudadana</strong>, incidentes delictivos o estado de infraestructura.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="propuesta" class="highlight">
+        <div class="container">
+          <h2>1.2 Nuestra Propuesta</h2>
+          <p>Desarrollo de una <strong>Aplicación Web Progresiva (PWA)</strong> que integra:</p>
+          <ul class="features">
+            <li><strong>Motor de Mapas:</strong> Navegación georreferenciada.</li>
+            <li><strong>Inteligencia Artificial:</strong> Clasificación de reportes de usuarios en tiempo real.</li>
+            <li><strong>Rutas de Bajo Riesgo:</strong> Algoritmos que maximizan la seguridad del ciclista.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="comparativa" class="container">
+        <h2>1.3 Análisis del Estado del Arte</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Herramienta</th>
+              <th>Funciones Principales</th>
+              <th>Diferencia con este Proyecto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google Maps / Strava</td>
+              <td>Navegación generalista y métricas deportivas.</td>
+              <td class="diff">No consideran seguridad ciudadana.</td>
+            </tr>
+            <tr>
+              <td>Bikleta / Pedalea.org</td>
+              <td>Fomento al uso de bici y mecánica.</td>
+              <td class="diff">Sin IA para procesamiento de riesgos real-time.</td>
+            </tr>
+            <tr>
+              <td><strong>Nuestra Propuesta</strong></td>
+              <td><strong>Navegación + IA de Seguridad + Reportes</strong></td>
+              <td class="check">✔ Solución específica para el contexto de Concepción.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Proyecto de Título - Pamel | Universidad del Bío-Bío</p>
+    </footer>
+
+    <style>
+      :root {
+        --primary: #2563eb;
+        --secondary: #10b981;
+        --dark: #1e293b;
+        --light: #f8fafc;
+        --warning: #ef4444;
+      }
+
+      body {
+        font-family: 'Inter', system-ui, sans-serif;
+        margin: 0;
+        background-color: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 4rem 1rem;
+      }
+
+      /* Header & Nav */
+      header {
+        background: white;
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: var(--dark);
+      }
+
+      .logo span { color: var(--primary); }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: var(--dark);
+        font-weight: 500;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, var(--dark) 0%, #0f172a 100%);
+        color: white;
+        text-align: center;
+        padding: 6rem 1rem;
+      }
+
+      .hero h1 { font-size: 3rem; margin: 0; }
+      .subtitle { font-size: 1.25rem; opacity: 0.9; }
+      .badge {
+        display: inline-block;
+        background: var(--primary);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+      }
+
+      /* Cards & Grid */
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        border-left: 5px solid var(--primary);
+      }
+
+      .card.warning { border-left-color: var(--warning); }
+
+      /* Highlight Section */
+      .highlight {
+        background: white;
+        border-top: 1px solid #e2e8f0;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      .features {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .features li::before {
+        content: "→";
+        color: var(--secondary);
+        margin-right: 10px;
+        font-weight: bold;
+      }
+
+      /* Table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 2rem;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      th, td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      th { background: #f1f5f9; }
+
+      .diff { font-style: italic; color: #64748b; }
+      .check { color: var(--secondary); font-weight: bold; }
+
+      footer {
+        text-align: center;
+        padding: 3rem;
+        font-size: 0.9rem;
+        color: #64748b;
+      }
+
+      @media (max-width: 600px) {
+        .grid { grid-template-columns: 1fr; }
+        .hero h1 { font-size: 2rem; }
+      }
+    </style>
+  </body>
 </html>
